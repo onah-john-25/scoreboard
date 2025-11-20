@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="club" id="club-a">
+                <h3>HOME</h3>
+                <p class="score home">00</p>
+                <div class="add-score-btns">
+                    <button data-club="home" class="add-score-btn">+1</button>
+                    <button data-club="home" class="add-score-btn">+2</button>
+                    <button data-club="home" class="add-score-btn">+3</button>
+                </div>
+
+                <button class="reset-btn" data-reset-score="home">Reset</button>
+            </div>
+
+            <div class="club" id="club-b">
+                <h3>GUEST</h3>
+                <p class="score guest">00</p>
+                <div class="add-score-btns">
+                    <button data-club="guest" class="add-score-btn">+1</button>
+                    <button data-club="guest" class="add-score-btn">+2</button>
+                    <button data-club="guest" class="add-score-btn">+3</button>
+                </div>
+
+                <button class="reset-btn" data-reset-score="guest">Reset</button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

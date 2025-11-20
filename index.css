@@ -1,0 +1,125 @@
+@import url('https://fonts.cdnfonts.com/css/cursed-timer-ulil');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 575px;
+    height: 358px;
+    background-color: #1B244A;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 20px 0 #0005;
+    max-width: 95%;
+}
+
+.container .club {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.club h3 {
+    font-size: 40px;
+    color: #EEEEEE;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.club .score {
+    color: #F94F6D;
+    font-size: 90px;
+    background-color: #080001;
+    border-radius: 5px;
+    width: 155px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.score::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    transition: 1s background-color;
+}
+
+.active::before {
+    background-color: green;
+}
+
+.draw::before {
+    background-color: yellow;
+}
+
+.add-score-btns {
+    display: flex;
+}
+
+.add-score-btns button {
+    width: 45px;
+    margin: 0 4px;
+    border: 2px solid  #9AABD8;
+    color: #9AABD8;
+    background-color: transparent;
+    font-family: inherit;
+}
+
+.add-score-btns button:hover {
+    background-color: rgba(238, 238, 238, .95);
+    border-color: transparent;
+    color: #080001;
+    cursor: pointer;
+}
+
+.add-score-btns .focus {
+    background-color: #F94F6D;
+    opacity: .7;
+    border-color: transparent;
+    color: #EEEEEE;
+    cursor: pointer;
+}
+
+.reset-btn {
+    width: 100%;
+    margin-top: 10px;
+    outline: 1px solid  #9AABD8;
+    background: #F94F6D;
+    color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+.reset-btn:hover {
+    opacity: .7;
+}
+
+button {
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 5px;
+    height: 45px;
+    font-size: 28px;
+    font-weight: 400;
+}
